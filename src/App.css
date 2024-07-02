@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: var(--primary-Background);
 }
 
 .App-logo {
@@ -35,4 +36,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+:root{
+  --primary-Background: #0A0514;
 }
