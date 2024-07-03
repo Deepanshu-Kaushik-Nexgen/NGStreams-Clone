@@ -1,0 +1,93 @@
+.homeContainer {
+    margin-top: 80px !important;
+    // position: absolute;
+    background-color: var(--primary-Background);
+    display: flex;
+    max-width: 90vw;
+    // flex-wrap: wrap;
+    padding: 0 80px;
+    // padding-bottom: 90px;
+
+    .leftSide {
+        flex: 40%;
+        display: flex;
+        flex-direction: column;
+
+        .heroHeading {
+            color: white;
+            font-size: 2.5em;
+            font-weight: 600;
+            text-align: left;
+
+            .fade-in-image {
+                animation: fadeIn 5s;
+            }
+
+            .headGrad {
+                background: var(--text-gradient-light);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            }
+        }
+
+        .textDesc {
+            color: white;
+            font-size: 1.3em;
+            font-weight: 200;
+           text-align: left;
+           line-height: 1.5;
+        }
+
+        .features{
+            display: flex;
+           
+
+            &.features img{
+                color: white;
+                height: 21px;
+                width: 21px;
+                margin-right: 5px;
+            }
+
+            .featuresItems{
+                color: white;
+                padding: 20px 0;
+                display: flex;
+                margin: 0 10px;
+                align-items: center;
+            }
+        }
+    }
+
+    .rightSide {
+        flex: 60%;
+        position: relative;
+
+        .image2{
+            margin-left: 10em;
+        }
+        .image1{
+            position: absolute;
+            top: -39%;
+            right: -15%;
+            z-index: 9;
+        }
+        .image3{
+            position: absolute;
+            top: 35%;
+            left: 47%;
+        }
+        .image4{
+            position: absolute;
+            right: 6%;
+            margin-top: 5px;
+        }
+    }
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
