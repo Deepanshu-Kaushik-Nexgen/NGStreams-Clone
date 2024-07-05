@@ -1,0 +1,49 @@
+.clientMain-Container {
+    background: url(../../Assets/background-Design.svg);
+    background-repeat: no-repeat;
+
+    .client-Container {
+        display: flex;
+        // overflow-y: scroll;
+        overflow-x: scroll;
+        margin: 5em 15px 0 15px;
+
+
+        .client-Card {
+            background-color: #DCDCF0;
+            font-size: 16px;
+            line-height: 1.5em;
+            font-weight: 600;
+            text-align: center;
+            height: 14em;
+            width: 18em;
+            margin: 5px;
+            border-radius: 10px;
+
+            .WordColor{
+                // color: green;
+                background:linear-gradient(135deg, #A265FF 10%, #F88696 50%, #FBBA6E 90%, #FFE5B5 100%); ;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .client-Card p {
+            padding: 10px;
+            
+            // padding: 10px 0;
+        }
+
+
+    }
+
+    .client-Container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .eclipse{
+        margin-top: 20px;
+        background-color: rgb(255, 0, 0) !important;
+        clip-path: ellipse(10rem 100% at top);
+    }
+}
