@@ -8,7 +8,7 @@ import Image4 from '../../Assets/HeroSectionImg/Frame 21.png'
 
 
 function Index() {
-  const names = ['Stream', 'Thrive', 'Boost']
+  const names = [' Stream', ' Thrive', ' Boost']
   const totalNames = names.length
 
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -17,7 +17,7 @@ function Index() {
   useEffect(() => {
     const intervalID = setInterval(() => {
       setAnimate(true)
-      setCurrentIndex((prevIndex)=>(prevIndex + 1) % totalNames);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalNames);
     }, 1200);
     return () => clearInterval(intervalID);
   }, [totalNames])
@@ -36,8 +36,8 @@ function Index() {
               <span className='headGrad'> AI</span>'s
             </div>
             <div>
-              prowess to 
-              <span className={`headGrad ${animate? 'fade-in-image':''}`} onAnimationEnd={onAnimationEnd} >{ names[currentIndex]}</span>
+              prowess to
+              <span className={`headGrad ${animate ? 'fade-in-image' : ''}`} onAnimationEnd={onAnimationEnd} >{names[currentIndex]}</span>
             </div>
             beyond limits !
           </div>
@@ -52,11 +52,11 @@ function Index() {
             <span className='featuresItems'><img src={frame} alt="" />Data-Driven Decision-Making</span>
           </div>
         </div>
-        <div className="rightSide">
-            <div className="image2"><img src={Image2} alt="" /></div>
-            <div className="image1"><img src={Image1} alt="" /></div>
-            <div className="image3"><img src={Image3} alt="" /></div>
-            <div className="image4"><img src={Image4} alt="" /></div>
+        <div className="hero-images">
+          <img className='img2' src={Image2} alt="" />
+          <img className='img3' src={Image1} alt="" />
+          <img className='img1' src={Image3} alt="" />
+          <img className='img4' src={Image4} alt="" />
         </div>
       </div>
     </>

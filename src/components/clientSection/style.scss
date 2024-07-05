@@ -1,0 +1,38 @@
+.clientMain-Container {
+    background: url(../../Assets/background-Design.svg);
+    background-repeat: no-repeat;
+
+    .client-Container {
+        display: flex;
+        // overflow-y: scroll;
+        overflow-x: scroll;
+        margin: 5em 15px 0 15px;
+
+
+        .client-Card {
+            background-color: #DCDCF0;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            height: 18em;
+            width: 18em;
+            margin: 5px;
+            border-radius: 10px;
+
+            .WordColor{
+                color: green;
+            }
+        }
+
+        .client-Card p {
+            padding: 10px;
+            font-size: 15px;
+        }
+
+
+    }
+
+    .client-Container::-webkit-scrollbar {
+        display: none;
+    }
+}
