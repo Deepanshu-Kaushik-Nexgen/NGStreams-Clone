@@ -7,7 +7,7 @@ export default function index() {
             index: 1,
             title: (
                 <>
-                    `Increased viewing sessions upto {<span className='WordColor'>72%</span>} and managing over {<span className='WordColor'>72 million+</span>} streaming sessions annually`
+                    Increased viewing<br/> sessions upto {<span className='WordColor'><br/>72%<br/></span>} and managing over {<span className='WordColor'>72 million+</span>} streaming sessions annually
                 </>
             )
         },
@@ -15,7 +15,7 @@ export default function index() {
             index: 2,
             title: (
                 <>
-                    `Transcoded more than {<span className='WordColor'>5 million+</span>} hours of media content in multiple formats in {<span className='WordColor'>HDR10</span>}`
+                    Transcoded <br/> more than {<span className='WordColor'><br/>5 million+<br/></span>} hours of media content in multiple formats in <br/>{<span className='WordColor'>HDR10</span>}
                 </>
             )
 
@@ -24,7 +24,7 @@ export default function index() {
             index: 3,
             title: (
                 <>
-                    `Enriched {<span className='WordColor'>20 million+</span>} metadata entries resulting in fantastic user engagement up to{<span className='WordColor'>93%</span>}`
+                    Enriched <br/>{<span className='WordColor'>20 million +<br/></span>} metadata entries resulting in fantastic user engagement up to{<span className='WordColor'><br/>93%</span>}
                 </>
             )
         },
@@ -32,7 +32,7 @@ export default function index() {
             index: 4,
             title: (
                 <>
-                    `Enabled seamless streaming for{<span className='WordColor'>10 million+</span>} households with {<span className='WordColor'>45%</span>} increase in user satisfaction`
+                    Enabled seamless streaming for{<span className='WordColor'><br/>10 million +<br/></span>} households with {<span className='WordColor'><br/>45%<br/></span>} increase in user satisfaction
                 </>
             )
         },
@@ -40,7 +40,7 @@ export default function index() {
             index: 5,
             title: (
                 <>
-                    `Analyzed over {<span className='WordColor'>17 million+</span>} social interactions, contributing to a {<span className='WordColor'>96%</span>} efficiency in platform strategies`
+                    Analyzed over <br/>{<span className='WordColor'>17 million +<br/></span>} social interactions, contributing to a {<span className='WordColor'><br/>96%<br/></span>} efficiency in platform strategies
                 </>
             )
         },
@@ -48,7 +48,7 @@ export default function index() {
             index: 6,
             title: (
                 <>
-                    `Handled over {<span className='WordColor'><br/>5 billion+ <br/></span>} concurrent sessions, ensuring{<span className='WordColor'>88%</span>} less zaptime during peak loads`
+                    Handled over{<span className='WordColor'><br/>5 billion+ <br/></span>} concurrent sessions, ensuring{<span className='WordColor'><br/>88%<br/></span>} less zaptime during peak loads
                 </>
             )
         },
@@ -56,7 +56,7 @@ export default function index() {
             index: 7,
             title: (
                 <>
-                    Delivering to {<span className='WordColor'>10 million+</span>} global users, providing a {<span className='WordColor'>58% <br/></span>} increase in content consumptions
+                    Delivering to <br/>{<span className='WordColor'>10 million +<br/></span>} global users, providing a <br/>{<span className='WordColor'>58% <br/></span>} increase in content consumptions
                 </>
             )
         },
@@ -70,6 +70,9 @@ export default function index() {
                             <p>{item.title}</p>
                         </div>
                     })}
+                </div>
+                <div className="eclipse">
+                    kdbdw
                 </div>
             </div>
         </>
