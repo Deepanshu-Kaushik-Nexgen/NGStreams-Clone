@@ -72,7 +72,7 @@ export default function index() {
                     })}
                 </div>
                 <div className="eclipse">
-                    kdbdw
+                    <div className="halfCircle"></div>
                 </div>
             </div>
         </>
