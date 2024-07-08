@@ -14,25 +14,14 @@ export default function Index() {
   const [activeButton, setActiveButton] = useState(1)
 
   useEffect(() => {
-  let intervalId = setInterval(() => {
-    if (activeButton < 8) {
-    setActiveButton(() => activeButton + 1)
-    } else {
-      // clearInterval(intervalId);
-      setActiveButton(1)
-    }
-  }, 10000);
-  console.log(activeButton)
-  // if (activeButton === 8) {
-    
-  // } else
- 
-    }
-  , [activeButton])
- 
+    let intervalId = setInterval(() => {
+      setActiveButton(prevButton => (prevButton < 8 ? prevButton + 1 : 1));
+    }, 10000);
+    return () => clearInterval(intervalId);
+  },[])
+
   function buttonToggleFunction(id) {
     setActiveButton(id)
-    // console.log(id)
   }
   return (
     <>
@@ -42,14 +31,14 @@ export default function Index() {
 
         <div className="articleSection">
           <div className="articleSecBtn">
-            <div className="btn" onClick={()=>buttonToggleFunction(1)}>Ad Insertion and Targeting</div>
-            <div className="btn" onClick={()=>buttonToggleFunction(2)}>QoS/Qc For VOD OTT Platforms</div>
-            <div className="btn" onClick={()=>buttonToggleFunction(3)}>Transcoding and Adaptive Streaming</div>
-            <div className="btn" onClick={()=>buttonToggleFunction(4)}>Smart Meta Data</div>
-            <div className="btn" onClick={()=>buttonToggleFunction(5)}>CRA</div>
-            <div className="btn" onClick={()=>buttonToggleFunction(6)}>VR OTT Watch</div>
-            <div className="btn" onClick={()=>buttonToggleFunction(7)}>Personalisation and Recommendation</div>
-            <div className="btn" onClick={()=>buttonToggleFunction(8)}>SetTop Box</div>
+            <div className="btn" onClick={() => buttonToggleFunction(1)}>Ad Insertion and Targeting</div>
+            <div className="btn" onClick={() => buttonToggleFunction(2)}>QoS/Qc For VOD OTT Platforms</div>
+            <div className="btn" onClick={() => buttonToggleFunction(3)}>Transcoding and Adaptive Streaming</div>
+            <div className="btn" onClick={() => buttonToggleFunction(4)}>Smart Meta Data</div>
+            <div className="btn" onClick={() => buttonToggleFunction(5)}>CRA</div>
+            <div className="btn" onClick={() => buttonToggleFunction(6)}>VR OTT Watch</div>
+            <div className="btn" onClick={() => buttonToggleFunction(7)}>Personalisation and Recommendation</div>
+            <div className="btn" onClick={() => buttonToggleFunction(8)}>SetTop Box</div>
           </div>
           {activeButton === 1 ? <div className="articleSecData">
             <div className="articleSecText">
