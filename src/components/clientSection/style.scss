@@ -1,12 +1,16 @@
 .clientMain-Container {
     background: url(../../Assets/background-Design.svg);
     background-repeat: no-repeat;
+    // margin-top: 40px;
+    // padding-top: 50px;
 
     .client-Container {
         display: flex;
         // overflow-y: scroll;
         overflow-x: scroll;
-        margin: 5em 15px 0 15px;
+        // margin: 5em 15px 0 15px;
+        max-width: 95%;
+        margin: 5em auto 2em auto;
 
 
         .client-Card {
@@ -16,13 +20,14 @@
             font-weight: 600;
             text-align: center;
             height: 14em;
-            width: 18em;
+            width: 16em;
             margin: 5px;
             border-radius: 10px;
 
-            .WordColor{
+            .WordColor {
                 // color: green;
-                background:linear-gradient(135deg, #A265FF 10%, #F88696 50%, #FBBA6E 90%, #FFE5B5 100%); ;
+                background: linear-gradient(135deg, #A265FF 10%, #F88696 50%, #FBBA6E 90%, #FFE5B5 100%);
+                ;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -30,7 +35,7 @@
 
         .client-Card p {
             padding: 10px;
-            
+
             // padding: 10px 0;
         }
 
@@ -41,9 +46,25 @@
         display: none;
     }
 
-    .eclipse{
-        margin-top: 20px;
-        background-color: rgb(255, 0, 0) !important;
-        clip-path: ellipse(10rem 100% at top);
+    .eclipse {
+        background: #EDEDF7 !important;
+        .halfCircle {
+            // margin-top: 20px;
+            // background-color: rgb(255, 0, 0) !important;
+            // clip-path: ellipse(10rem 100% at top);
+
+            // margin-top: 10px;
+            width: 100%;
+            height: 80px;
+            border-radius: 50% 50% 0 0;
+            // position: relative;
+            background-color: var(--primary-Background);
+            margin-top: 15px;
+
+            transform: rotate(180deg);
+        }
     }
+
 }
+
+@media only screen and (max-width: 800px) {}

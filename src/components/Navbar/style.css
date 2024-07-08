@@ -2,11 +2,14 @@
     display: flex;
     top: 0px;
     color: white;
+    background-color: var(--primary-Background);
     align-items: center;
     padding: 23px 80px 15px 80px;
     gap: 10px;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
+    width: 90%;
+    z-index: 9999;
 
 }
 
@@ -29,6 +32,7 @@
     display: flex;
     align-items: center;
     gap: 4px;
+    margin-left: 2.5em;
 }
 
 .active {
@@ -161,6 +165,7 @@
         position: fixed;
         top: 0;
         overflow-y: scroll;
+        
         /* padding: 23px 80px 15px 80px; */
         color: white;
         font-size: larger;
@@ -206,6 +211,7 @@
         padding: 10px;
         list-style: none;
         cursor: pointer;
+        -webkit-transition: all 0.5s ease-out;
     }
 
     .mobProductActive li{
