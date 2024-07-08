@@ -15,7 +15,10 @@
             justify-content: center;
             // flex-wrap: wrap;
 
-
+            &.articleSecBtn .btn:active{
+                color: white;
+                background-color: black;
+            }
 
             .btn {
                 margin: 5px;

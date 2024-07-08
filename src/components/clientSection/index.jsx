@@ -66,7 +66,7 @@ export default function index() {
             <div className="clientMain-Container">
                 <div className="client-Container">
                     {client.map((item) => {
-                        return <div key={index} className="client-Card">
+                        return <div key={item.index} className="client-Card">
                             <p>{item.title}</p>
                         </div>
                     })}

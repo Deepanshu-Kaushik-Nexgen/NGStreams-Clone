@@ -14,11 +14,19 @@ export default function Index() {
   const [activeButton, setActiveButton] = useState(1)
 
   useEffect(() => {
-  let intervalId = setTimeout(() => {
-    setActiveButton(()=>activeButton + 1)
-  }, 1000);
+  let intervalId = setInterval(() => {
+    if (activeButton < 8) {
+    setActiveButton(() => activeButton + 1)
+    } else {
+      // clearInterval(intervalId);
+      setActiveButton(1)
+    }
+  }, 10000);
   console.log(activeButton)
-  clearInterval(intervalId);
+  // if (activeButton === 8) {
+    
+  // } else
+ 
     }
   , [activeButton])
  
