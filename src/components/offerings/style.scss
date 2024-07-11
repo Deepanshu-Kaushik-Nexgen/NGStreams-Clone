@@ -1,0 +1,74 @@
+.offeringsContainer {
+    .semiCircle {
+        // background: green !important;
+        width: 100%;
+        height: 80px;
+        border-radius: 50% 50% 0 0;
+        position: relative;
+        background-color: var(--primary-Background);
+        margin-top: -37px;
+        transform: rotate(360deg);
+    }
+
+    .headings {
+        color: white;
+
+        &.headings h1 {
+            background: linear-gradient(135deg, #A265FF 10%, #F88696 50%, #FBBA6E 90%, #FFE5B5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &.headings h5 {
+            font-weight: 200;
+        }
+
+
+    }
+
+    .cardsRows {
+        display: flex;
+        flex-direction: row;
+        max-width: 80%;
+        margin: 0 auto;
+        position: relative;
+
+        // overflow-y: scroll;
+
+        .card {
+            transition: 0.5s;
+            // transform: translateY(100%);
+
+            .anim {
+                transition: 0.5s;
+                transform: translateY(-20%);
+                transform: translateX(8%);
+            }
+
+            .title {
+                color: rgb(255, 255, 255);
+                transition: 0.5s;
+                // transform: translateY(-100%);
+                position: absolute;
+            }
+
+            .desc {
+                color: #fff;
+                // opacity: 0;
+            }
+
+            .card:hover .anim,
+            .card:hover .title {
+                transform: translateY(0);
+            }
+        }
+
+        &.cardsRows .card img {
+            height: 20em;
+            width: 12.5em;
+            object-fit: cover;
+            // transform: translateY(100%);
+        }
+
+    }
+}

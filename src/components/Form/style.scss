@@ -1,0 +1,81 @@
+.formContainer {
+    background-color: #F5F5F7;
+    max-width: 80%;
+    margin: 4em auto;
+    padding: 2.5em 0;
+
+
+    .formheadings{
+        & h2 {
+font-size: 21px;
+        }
+
+        & p {
+            font-size: 14px;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 0;
+        margin: 10px;
+
+        .name-email {
+            display: flex;
+            // align-items: center;
+            // justify-content: center;
+
+        }
+
+        .textArea textarea {
+            // width: 58%;
+            width: 43em;
+            height: 10em;
+            padding: 12px;
+            margin: 10px;
+        }
+
+        .checkboxDiv {
+            display: flex;
+            align-items: center;
+            justify-content: stretch;
+            max-width: 45%;
+            // margin-left: 10em;
+            margin-top: 2em;
+            // margin: 0 auto;
+            font-size: 13px;
+
+            & input {
+                width: 5em;
+                background-color: lightgreen;
+                // appearance: none;
+            }
+
+            & p{
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        & input {
+            height: 30px;
+            width: 20em;
+            margin: 10px;
+            padding: 10px;
+            // width: 50px;
+            // height: 63px;
+            // border-radius: 4px;
+            // padding: 24px;
+            // gap: 8px;
+        }
+
+        button {
+            height: 3.5em;
+            width: 10em;
+            margin-top: 2em;
+        }
+    }
+}

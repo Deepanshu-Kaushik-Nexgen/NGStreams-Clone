@@ -1,0 +1,23 @@
+.trustedByDiv {
+
+    & h1 {
+        background: linear-gradient(91deg, #a265ff 0.6%, #f88696 18.28%, #fbba6e 35.95%, #ffe5b5 53.63%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    .sliderDiv {
+        height: 21em;
+        width: 95%;
+        margin: 5em 2em;
+        animation: marquee 30s linear infinite;
+
+        & img {
+            height: 23em;
+            width: 19em;
+            border-radius: 5px;
+        }
+    }
+}
