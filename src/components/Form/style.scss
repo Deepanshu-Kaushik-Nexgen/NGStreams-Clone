@@ -5,9 +5,9 @@
     padding: 2.5em 0;
 
 
-    .formheadings{
+    .formheadings {
         & h2 {
-font-size: 21px;
+            font-size: 21px;
         }
 
         & p {
@@ -25,6 +25,7 @@ font-size: 21px;
 
         .name-email {
             display: flex;
+            flex-wrap: wrap;
             // align-items: center;
             // justify-content: center;
 
@@ -54,7 +55,7 @@ font-size: 21px;
                 // appearance: none;
             }
 
-            & p{
+            & p {
                 margin: 0;
                 padding: 0;
             }
@@ -76,6 +77,70 @@ font-size: 21px;
             height: 3.5em;
             width: 10em;
             margin-top: 2em;
+        }
+    }
+}
+
+@media only screen and (max-width: 1920px) {}
+
+@media only screen and (max-width: 1728px) {}
+
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1366px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {
+    .formContainer {
+        .form {
+
+
+            .name-email {
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .textArea textarea {
+                // width: 58%;
+                width: 20em;
+                height: 10em;
+                padding: 12px;
+                margin: 10px;
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .formContainer{
+        .form{
+            .checkboxDiv{
+
+                max-width: 67%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 360px) {
+    .formContainer {
+        .form {
+            .textArea textarea {
+                width: 15em;
+            }
+            .checkboxDiv {
+              
+                max-width: 95%;
+            }
+            & input {
+                width: 15em;
+            }
         }
     }
 }

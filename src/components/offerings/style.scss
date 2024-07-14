@@ -1,6 +1,5 @@
 .offeringsContainer {
     .semiCircle {
-        // background: green !important;
         width: 100%;
         height: 80px;
         border-radius: 50% 50% 0 0;
@@ -13,62 +12,122 @@
     .headings {
         color: white;
 
-        &.headings h1 {
+        h1 {
             background: linear-gradient(135deg, #A265FF 10%, #F88696 50%, #FBBA6E 90%, #FFE5B5 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        &.headings h5 {
+        h5 {
             font-weight: 200;
         }
-
-
     }
 
     .cardsRows {
         display: flex;
         flex-direction: row;
-        max-width: 80%;
-        margin: 0 auto;
+        overflow-x: scroll;
+        max-width: 85%;
+        margin: 5em auto;
         position: relative;
 
-        // overflow-y: scroll;
-
         .card {
+            width: 100%;
             transition: 0.5s;
-            // transform: translateY(100%);
+            position: relative;
 
             .anim {
-                transition: 0.5s;
-                transform: translateY(-20%);
-                transform: translateX(8%);
+                // transition: 0.5s;
+                // transform: translateY(-100%);
             }
 
             .title {
+                position: absolute;
                 color: rgb(255, 255, 255);
                 transition: 0.5s;
-                // transform: translateY(-100%);
-                position: absolute;
+                transform: translateY(-160%);
+                margin-left: 10px;
+                // transform: translateX(40%);
             }
 
             .desc {
+                position: absolute;
                 color: #fff;
-                // opacity: 0;
+                display: none;
+                max-width: 90%;
+                text-align: left;
+                margin-left: 20px;
+                margin: 0 auto;
             }
 
-            .card:hover .anim,
-            .card:hover .title {
-                transform: translateY(0);
+            &:hover {
+                .cardBackground {
+                    filter: blur(20px);
+                }
+
+                .title {
+                    font-size: 24px;
+                    font-weight: 600;
+                    transform: translateY(-800%);
+                    background: linear-gradient(92deg, #A265FF -5.58%, #F88696 29.61%, #FBBA6E 64.81%, #FFE5B5 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .desc {
+                    opacity: 8;
+                    font-size: 16px;
+                    display: block;
+                    transform: translateY(-110%);
+                }
+
+                .anim {
+                    // transform: translateY(0);
+                }
             }
         }
 
-        &.cardsRows .card img {
-            height: 20em;
-            width: 12.5em;
+        .card .cardBackground img {
+            height: 24em;
+            width: 15.3em;
             object-fit: cover;
-            // transform: translateY(100%);
         }
-
     }
+}
+
+@media only screen and (max-width: 1920px) {
+    /* Responsive styles */
+}
+
+@media only screen and (max-width: 1728px) {
+    /* Responsive styles */
+}
+
+@media only screen and (max-width: 1440px) {
+    /* Responsive styles */
+}
+
+@media only screen and (max-width: 1366px) {
+    /* Responsive styles */
+}
+
+@media only screen and (max-width: 1024px) {
+    /* Responsive styles */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Responsive styles */
+}
+
+@media only screen and (max-width: 580px) {
+    /* Responsive styles */
+}
+
+@media only screen and (max-width: 480px) {
+    /* Responsive styles */
+}
+
+@media only screen and (max-width: 360px) {
+    /* Responsive styles */
 }

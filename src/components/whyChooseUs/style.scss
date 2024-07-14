@@ -82,3 +82,60 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 1920px) {
+
+}
+
+@media only screen and (max-width: 1728px) {
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .whyChooseContainer {
+        .background2 {
+    
+            .contentMainDiv {
+                flex-wrap: wrap;
+    
+                .imageDiv img {
+                    height: auto;
+                    width: 100%;
+                }
+    
+                .contentDiv{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 580px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 360px) {
+
+}

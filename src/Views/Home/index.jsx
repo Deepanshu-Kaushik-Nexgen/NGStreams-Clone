@@ -19,7 +19,6 @@ function index() {
     <WhyChooseUs />
     <TrustedBy />
     <FAQ />
-    <Form />
     </>
   )
 }

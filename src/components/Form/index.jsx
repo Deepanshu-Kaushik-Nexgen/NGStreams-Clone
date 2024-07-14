@@ -9,9 +9,7 @@ const Form = () => {
     companyName: "",
     textArea: "",
     checkbox: ""
-    // age: ''
   })
-  // const {firstName} = formData
 
   const handleChange = (e) => {
     const { name, value } = e.target

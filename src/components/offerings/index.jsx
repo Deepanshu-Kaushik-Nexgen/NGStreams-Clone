@@ -19,23 +19,49 @@ const index = () => {
                 </div>
                 <div className="cardsRows">
                     <div className="card">
-                        <img src={Image1} alt="" />
+                        <div className="cardBackground">
+                            <img src={Image1} alt="" />
+                        </div>
                         <div className="anim">
                             <div className="title">Media & Broadcast</div>
                             <div className="desc">Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement.</div>
                         </div>
                     </div>
                     <div className="card">
-                        <img src={Image2} alt="" />
+                        <div className="cardBackground">
+                            <img src={Image2} alt="" />
+                        </div>
+                        <div className="anim">
+                            <div className="title">Media & Broadcast</div>
+                            <div className="desc">Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement.</div>
+                        </div>
                     </div>
                     <div className="card">
-                        <img src={Image3} alt="" />
+                        <div className="cardBackground">
+                            <img src={Image3} alt="" />
+                        </div>
+                        <div className="anim">
+                            <div className="title">Media & Broadcast</div>
+                            <div className="desc">Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement.</div>
+                        </div>
                     </div>
                     <div className="card">
-                        <img src={Image4} alt="" />
+                        <div className="cardBackground">
+                            <img src={Image4} alt="" />
+                        </div>
+                        <div className="anim">
+                            <div className="title">Media & Broadcast</div>
+                            <div className="desc">Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement.</div>
+                        </div>
                     </div>
                     <div className="card">
-                        <img src={Image5} alt="" />
+                        <div className="cardBackground">
+                            <img src={Image5} alt="" />
+                        </div>
+                        <div className="anim">
+                            <div className="title">Media & Broadcast</div>
+                            <div className="desc">Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement.</div>
+                        </div>
                     </div>
                 </div>
             </div>
