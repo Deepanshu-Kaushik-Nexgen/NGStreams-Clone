@@ -45,7 +45,7 @@ const Form = () => {
             <input type="checkbox" onChange={handleChange} name="checkBox" />
             <p>I consent to the processing of the personal data that I provide NGStreams for this activity in accordance with and as described in the Privacy Policy.</p>
           </div>
-          <button onClick={handleChange}>Submit</button>
+          <button onClick={handleChange} >Submit</button>
         </div>
       </div>
     </>

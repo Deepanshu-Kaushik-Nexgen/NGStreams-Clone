@@ -74,9 +74,15 @@
         }
 
         button {
+            cursor: pointer;
             height: 3.5em;
-            width: 10em;
+            width: 12em;
             margin-top: 2em;
+            font-family: 600;
+            font-size: 16px;
+            border: none;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(99deg, #A265FF -13.04%, #F88696 21.12%, #FBBA6E 55.28%, #FFE5B5 89.44%);
         }
     }
 }
