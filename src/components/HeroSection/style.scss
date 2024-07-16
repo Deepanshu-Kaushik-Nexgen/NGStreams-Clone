@@ -1,5 +1,5 @@
 .homeContainer {
-    margin-top: 100px !important;
+    margin-top: 150px !important;
     // position: absolute;
     background-color: var(--primary-Background);
     display: flex;
@@ -189,43 +189,26 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    // .homeContainer {
-    //     padding: 0 70px;
-
-    //     .hero-images {
-    //         margin-top: 10%;
-
-    //         .img2 {
-    //             width: 25em;
-    //             height: auto;
-    //         }
-
-    //         .img1 {
-    //             width: 5em;
-    //             height: auto;
-    //             top: 30%;
-    //         }
-
-    //         .img3 {
-    //             width: 3em;
-    //             height: auto;
-
-    //         }
-
-    //         .img4 {
-    //             width: 10em;
-    //             height: auto;
-    //             top: 60%;
-    //         }
-    //     }
-
-    // }
-
+  
     .homeContainer {
         flex-direction: column;
 
         .leftSide {
             width: 80vw;
+
+            .heroHeading{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .features{
+                flex-direction: column;
+
+                .featuresItems{
+                    padding: 10px 0;
+                }
+            }
         }
 
         .hero-images {

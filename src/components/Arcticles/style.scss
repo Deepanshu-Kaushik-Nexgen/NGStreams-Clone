@@ -14,14 +14,20 @@
             margin: 0 auto;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
             // flex-wrap: wrap;
+
+            .activeBtn {
+                background-color: black !important;
+                color: white;
+            }
 
             .btn {
                 margin: 5px;
-                font-weight: 600;
+                font-weight: 500;
                 margin-top: 2em;
                 padding: 10px;
-                // border: 1px solid green;
+                // border: 1px solid green;.button 
                 border-radius: 5px;
                 background-color: #DCDCF0;
                 cursor: pointer;
@@ -70,6 +76,11 @@
                     text-align: center;
                     padding: 16px 24px 16px 24px;
                     cursor: pointer;
+
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
                 }
 
                 .ColorHeading {
@@ -97,17 +108,31 @@
         .articleSection {
             .articleSecBtn {
                 overflow-x: scroll;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
             }
 
             .articleSecData {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                padding: 3em 0;
+                max-width: 90%;
+                margin: 0 auto;
+                align-items: center;
+
                 .articleSecText {
 
+                    max-width: 33%;
+
                     & h2 {
-                        font-size: 38px;
+                        font-size: 30px;
                     }
 
                     & p {
-                        font-size: 19px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -123,7 +148,7 @@
                 .articleSecText {
 
                     & h2 {
-                        font-size: 34px;
+                        font-size: 32px;
                     }
                 }
             }
@@ -138,7 +163,7 @@
                 .articleSecText {
 
                     & h2 {
-                        font-size: 28px;
+                        font-size: 24px;
                     }
 
                     & p {
@@ -174,15 +199,17 @@
         .articleSection {
             .articleSecData {
                 flex-wrap: wrap-reverse;
+
                 & .articleSecImg img {
-                    margin-left: 20%;
-                    width: 95%;
+                    margin-left: 13%;
+                    width: 100%;
                 }
 
                 .articleSecText {
                     padding: 0px 0px 0 0;
                     margin-top: 10px;
-                    max-width: 100%;
+                    max-width: 80%;
+                    margin-bottom: 2em;
 
                     & h2 {
                         font-size: 25px;
@@ -203,7 +230,11 @@
     .ArticlesComponentContainer {
         .articleSection {
             .articleSecData {
-                // flex-wrap: wrap-reverse;
+
+                .articleSecText {
+                    max-width: 95%;
+                }
+
                 & .articleSecImg img {
                     margin-left: 0;
                     width: 95%;

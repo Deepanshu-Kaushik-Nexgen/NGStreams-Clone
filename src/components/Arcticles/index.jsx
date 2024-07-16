@@ -13,12 +13,12 @@ import SETTOPBOX from '../../Assets/ClientSec/traffic.jpg'
 export default function Index() {
   const [activeButton, setActiveButton] = useState(1)
 
-  // useEffect(() => {
-  //   let intervalId = setInterval(() => {
-  //     setActiveButton(prevButton => (prevButton < 8 ? prevButton + 1 : 1));
-  //   }, 10000);
-  //   return () => clearInterval(intervalId);
-  // },[])
+  useEffect(() => {
+    let intervalId = setInterval(() => {
+      setActiveButton(prevButton => (prevButton < 8 ? prevButton + 1 : 1));
+    }, 10000);
+    return () => clearInterval(intervalId);
+  },[])
 
   function buttonToggleFunction(id) {
     setActiveButton(id)
@@ -31,14 +31,14 @@ export default function Index() {
 
         <div className="articleSection">
           <div className="articleSecBtn">
-            <div className="btn" onClick={() => buttonToggleFunction(1)}>Ad Insertion and Targeting</div>
-            <div className="btn" onClick={() => buttonToggleFunction(2)}>QoS/Qc For VOD OTT Platforms</div>
-            <div className="btn" onClick={() => buttonToggleFunction(3)}>Transcoding and Adaptive Streaming</div>
-            <div className="btn" onClick={() => buttonToggleFunction(4)}>Smart Meta Data</div>
-            <div className="btn" onClick={() => buttonToggleFunction(5)}>CRA</div>
-            <div className="btn" onClick={() => buttonToggleFunction(6)}>VR OTT Watch</div>
-            <div className="btn" onClick={() => buttonToggleFunction(7)}>Personalisation and Recommendation</div>
-            <div className="btn" onClick={() => buttonToggleFunction(8)}>SetTop Box</div>
+            <div className={`btn ${activeButton === 1 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(1)}>Ad Insertion and Targeting</div>
+            <div className={`btn ${activeButton === 2 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(2)}>QoS/Qc For VOD OTT Platforms</div>
+            <div className={`btn ${activeButton === 3 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(3)}>Transcoding and Adaptive Streaming</div>
+            <div className={`btn ${activeButton === 4 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(4)}>Smart Meta Data</div>
+            <div className={`btn ${activeButton === 5 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(5)}>CRA</div>
+            <div className={`btn ${activeButton === 6 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(6)}>VR OTT Watch</div>
+            <div className={`btn ${activeButton === 7 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(7)}>Personalisation and Recommendation</div>
+            <div className={`btn ${activeButton === 8 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(8)}>SetTop Box</div>
           </div>
           {activeButton === 1 ? <div className="articleSecData">
             <div className="articleSecText">
@@ -78,8 +78,8 @@ export default function Index() {
 
           {activeButton === 4 ? <div className="articleSecData">
             <div className="articleSecText">
-              <h2>Enhance Engagement, Enrich Experience: Elevating OTT Content with Metadata</h2>
-              <h2 className="ColorHeading">Mastery</h2>
+              <h2>Enhance Engagement, Enrich Experience: Elevating OTT Content with Metadata <span className="ColorHeading">Mastery</span></h2>
+              
               <p>Empower your OTT platform with enriched metadata, unlocking deeper engagement and personalized user experiences. Our solution ensures seamless content discovery and relevance, driving viewer satisfaction and retention.</p>
               <div className='button'>Discover More</div>
             </div>
@@ -115,8 +115,7 @@ export default function Index() {
 
           {activeButton === 7 ? <div className="articleSecData">
             <div className="articleSecText">
-              <h2>Tailored Experiences, Endless Discoveries: Redefining Engagement Through</h2>
-              <h2 className="ColorHeading">Personalization and Recommendation</h2>
+              <h2>Tailored Experiences, Endless Discoveries: Redefining Engagement Through <span className="ColorHeading">Personalization and Recommendation</span></h2>
               <p>Elevate user satisfaction with our cutting-edge personalization and recommendation engine. Harnessing AI, it delivers curated content, enhancing engagement and driving retention.</p>
               <div className='button'>Discover More</div>
             </div>
@@ -127,8 +126,8 @@ export default function Index() {
 
           {activeButton === 8 ? <div className="articleSecData">
             <div className="articleSecText">
-              <h2>Versatile Entertainment Hub: Home Viewing Experience with smart </h2>
-              <h2 className="ColorHeading">Set-Top boxes</h2>
+              <h2>Versatile Entertainment Hub: Home Viewing Experience with smart <span className="ColorHeading">Set-Top boxes</span></h2>
+              
               <p>An all-in-one device offering diverse entertainment options and seamless connectivity for an enhanced viewing experience at the comfort of your home.</p>
               <div className='button'>Discover More</div>
             </div>
