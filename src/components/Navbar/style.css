@@ -146,6 +146,7 @@
 
     .mobMenuContainer{
         display: block;
+        /* transition: 10 linear; */
     }
 
     .Mobnav-First{

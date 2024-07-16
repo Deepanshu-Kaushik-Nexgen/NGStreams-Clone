@@ -16,7 +16,7 @@ export default function Index() {
   useEffect(() => {
     let intervalId = setInterval(() => {
       setActiveButton(prevButton => (prevButton < 8 ? prevButton + 1 : 1));
-    }, 10000);
+    }, 1000);
     return () => clearInterval(intervalId);
   },[])
 

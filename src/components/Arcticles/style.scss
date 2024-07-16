@@ -41,6 +41,8 @@
         }
 
         .articleSecData {
+            // float: left;
+            // transition: width 2 ease-in;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -90,10 +92,13 @@
                 }
             }
 
-
+            .articleSecImg{
+                width: 50%;
+            }
 
             .articleSecImg img {
-                // width: 40em;
+               
+                transition: 1s ease-in;
                 width: 90%;
                 height: auto;
                 border-radius: 8px;
