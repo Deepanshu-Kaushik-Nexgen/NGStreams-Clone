@@ -54,11 +54,11 @@
 
             .articleSecText {
                 max-width: 35%;
-                // padding: 3em 4em;
                 padding: 0 120px 0 0;
                 margin: 0 auto;
-                // margin: 0 3rem;
                 text-align: left;
+                // transform: translateX(100%);
+                animation: slide-in-Text 1s forwards ease-in-out;
 
                 &.articleSecText h2 {
                     margin: 0;
@@ -92,21 +92,41 @@
                 }
             }
 
-            .articleSecImg{
+            .articleSecImg {
                 width: 50%;
             }
 
             .articleSecImg img {
-               
-                transition: 1s ease-in;
                 width: 90%;
                 height: auto;
                 border-radius: 8px;
+                // transform: translateX(100%);
+                animation: slide-in 1s forwards ease-in-out;
             }
+
         }
     }
 }
 
+@keyframes slide-in {
+    from {
+        transform: translateX(60%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-Text {
+    from {
+        transform: translateX(30%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
 
 @media only screen and (max-width: 1920px) {
     .ArticlesComponentContainer {

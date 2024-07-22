@@ -47,7 +47,6 @@
                 transition: 0.5s;
                 transform: translateY(-160%);
                 margin-left: 10px;
-                // transform: translateX(40%);
             }
 
             .desc {
@@ -62,7 +61,12 @@
 
             &:hover {
                 .cardBackground {
-                    filter: blur(20px);
+                    background-color: #FBBA6E !important;
+
+                    & img{
+                        display: none;
+
+                    }
                 }
 
                 .title {
