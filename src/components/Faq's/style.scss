@@ -12,45 +12,84 @@
         }
 
         & h5{
-            font-weight: 400;
-            font-size: 14px;
+            font-weight: 500;
+            font-size: 18px;
         }
     }
 
     .accordianDiv{
-        max-width: 60%;
+        max-width: 70%;
         margin: 0 auto;
         padding: 10px 5px;
 
         .accordian{
-            background-color: white;
-            padding: 3em 1.5em;
+            margin: 20px auto;
+            border: none;
             text-align: center;
             display: flex;
-            // align-items: center;
-            max-width: 50rem;
-            // justify-content: center;
+            flex-direction: column;
+            // max-width: 50rem;
+            max-width: 70%;
             cursor: pointer;
-            margin: 20px auto;
-            border-radius: 5px;
+           
 
-            & details p{
-                font-size: 14px;
-                font-weight: 200;
-                max-width: 90%;
-                margin: 2em auto;
-                text-align: justify;
+        .accordianQues{
+            display: flex;
+            justify-content: space-between;
+            border-radius: 5px 5px 0 0;
+            background-color: white;
+            text-align: center;
+            padding: 2.5em 2em;
+            text-align: left;
+            margin: 10px 0;
+            margin-bottom: 0 !important;
+
+            .question{
+                font-size: 18px;
+                font-weight: 600;
+                margin-right: 15px;
+
+               
             }
 
-            & summary{
-                font-size: 16px;
-                font-weight: 500;
+            .transform180{
+                transform: rotate(180deg);
+            }
 
-                &::marker{
-                    display: none;
-                    opacity: 0;
+            & img{
+                height: 20px;
+                path {
+                    fill: black;
                 }
             }
+        }
+
+        .answerDiv{
+            // position: absolute;
+            margin-top: 0 !important;
+            // padding: 3em 1.5em;
+            padding: 0.5em 1.5em 3em 1.5em;
+            text-align: center;
+            max-width: 100%;
+            // margin: 0 auto 2em auto;
+            background-color: white;
+            border-radius: 0 0 5px 5px;
+            text-align: justify;
+
+            .answer{
+                font-size: 16px;
+                font-weight: 400;
+                text-align: justify;
+                margin-bottom: 50px;
+                line-height: 1.5em;
+                max-width: 95%;
+                margin: 0 auto;
+
+                &p{
+                    margin: 40px 0;
+                }
+            }
+        }
         }
     }
 }

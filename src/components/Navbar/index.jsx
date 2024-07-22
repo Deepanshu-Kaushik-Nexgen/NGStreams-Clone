@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './style.css'
 import Nglogo from '../../Assets/NGSlogo.c9d0f1eb.svg'
 import iconDown from '../../Assets/icons/Icon Size.svg'
@@ -64,13 +64,27 @@ const Index = () => {
         // }
     }
 
+    const btnRef = useRef()
+
+    useEffect(() => {
+        const closeDropdown = e => {
+            if (!btnRef.current.contains(e.target)) {
+                // setIsOpen(false);
+                setShowProducts(false)
+                setShowCompany(false)
+            }
+        }
+        document.body.addEventListener('click', closeDropdown)
+        return () => document.body.removeEventListener('click', closeDropdown)
+    }, [])
+
     return (
         <>
             {console.log(handleArrow)}
             {console.log(mobMenu)}
 
             <nav>
-                <div className="navContainer">
+                <div  ref={btnRef} className="navContainer">
                     <img className="BurgerMenu" src={mobMenu ? Cross : Burger} alt="" onClick={() => setMobMenu(!mobMenu)} />
                     <div className="nav-left">
                         <div className="NgLogo">
@@ -83,7 +97,7 @@ const Index = () => {
                                 <Link to='/products'>  Products</Link>
                                 <img className='img' src={iconDown} alt="Icon" />
                                 <ul className={showProducts ? "products-listActive" : "products-list"}>
-                                <li>Ad Insertion And Targeting</li>
+                                <li><a href='#AdInsertion'>Ad Insertion And Targeting</a></li>
                                 <li>Smart Meta Data</li>
                                 <li>CRA</li>
                                 <li>VR OTT Watch</li>
@@ -99,7 +113,7 @@ const Index = () => {
                                 <img src={iconDown} alt="Icon" />
 
                                 <ul className={showCompany ? "company-listActive" : "company-list"}>
-                                <li>About Us</li>
+                                <li><a href='#AdInsertion'>About Us</a></li>
                                 <li>Contact</li>
                             </ul>
                             </div>

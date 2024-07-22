@@ -20,44 +20,68 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 2em 0;
+        padding: 5em 0;
         margin: 10px;
 
         .name-email {
             display: flex;
             flex-wrap: wrap;
-            // align-items: center;
-            // justify-content: center;
+
+            & p {
+                font-size: 10px;
+                padding: 0;
+                margin: 0 0 0 10px;
+                color: rgb(156, 29, 29);
+                text-align: left;
+            }
 
         }
 
+        .textArea {
+            & p {
+                font-size: 10px;
+                padding: 0;
+                margin: 0 0 0 10px;
+                color: red;
+                text-align: left;
+            }
+        }
+
         .textArea textarea {
-            // width: 58%;
             width: 43em;
             height: 10em;
             padding: 12px;
             margin: 10px;
+            border: none;
         }
 
         .checkboxDiv {
             display: flex;
-            align-items: center;
-            justify-content: stretch;
-            max-width: 45%;
-            // margin-left: 10em;
+            justify-content: center;
+            max-width: 30%;
             margin-top: 2em;
-            // margin: 0 auto;
             font-size: 13px;
 
+            & img {
+                padding: 0;
+                margin: 0;
+                height: 2rem !important;
+                width: 5rem !important;
+            }
+
             & input {
-                width: 5em;
-                background-color: lightgreen;
-                // appearance: none;
+                padding: 0;
+                margin: 0;
+                height: 2rem !important;
+                width: 5rem !important;
+                border: none !important;
             }
 
             & p {
                 margin: 0;
                 padding: 0;
+                text-align: left;
+                margin-left: 10px !important;
             }
         }
 
@@ -66,14 +90,10 @@
             width: 20em;
             margin: 10px;
             padding: 10px;
-            // width: 50px;
-            // height: 63px;
-            // border-radius: 4px;
-            // padding: 24px;
-            // gap: 8px;
+            border: none;
         }
 
-        button {
+        .submitBtn {
             cursor: pointer;
             height: 3.5em;
             width: 12em;
@@ -83,6 +103,19 @@
             border: none;
             padding: 1rem 1.5rem;
             background: linear-gradient(99deg, #A265FF -13.04%, #F88696 21.12%, #FBBA6E 55.28%, #FFE5B5 89.44%);
+        }
+
+        .btn {
+            cursor: pointer;
+            height: 3.5em;
+            width: 12em;
+            margin-top: 2em;
+            font-family: 600;
+            font-size: 16px;
+            border: none;
+            padding: 1rem 1.5rem;
+            color: white;
+            background-color: black;
         }
     }
 }
@@ -122,9 +155,9 @@
 }
 
 @media only screen and (max-width: 580px) {
-    .formContainer{
-        .form{
-            .checkboxDiv{
+    .formContainer {
+        .form {
+            .checkboxDiv {
 
                 max-width: 67%;
             }
@@ -140,10 +173,12 @@
             .textArea textarea {
                 width: 15em;
             }
+
             .checkboxDiv {
-              
+
                 max-width: 95%;
             }
+
             & input {
                 width: 15em;
             }
