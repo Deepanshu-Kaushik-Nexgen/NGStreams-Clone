@@ -39,6 +39,7 @@ export default function Index() {
             <div className={`btn ${activeButton === 6 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(6)}>VR OTT Watch</div>
             <div className={`btn ${activeButton === 7 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(7)}>Personalisation and Recommendation</div>
             <div className={`btn ${activeButton === 8 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(8)}>SetTop Box</div>
+           
           </div>
           {activeButton === 1 ? <div className="articleSecData">
             <div className="articleSecText" id='AdInsertion'>
@@ -137,6 +138,7 @@ export default function Index() {
           </div> : ""}
         </div>
       </div>
+      <div className="space" style={{height: "50px", backgroundColor: "#EDEDF7"}}></div>
     </>
   )
 }

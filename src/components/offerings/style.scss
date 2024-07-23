@@ -44,8 +44,6 @@
             .title {
                 position: absolute;
                 color: rgb(255, 255, 255);
-                transition: 0.5s;
-                transform: translateY(-160%);
                 margin-left: 10px;
             }
 
@@ -59,37 +57,40 @@
                 margin: 0 auto;
             }
 
-            &:hover {
-                .cardBackground {
-                    background-color: #FBBA6E !important;
+            // &:hover {
+            //     .cardBackground {
+            //         position: relative;
+            //         // background-color: #FBBA6E !important;
+            //         overlay: green;
+            //         z-index: 99999;
 
-                    & img{
-                        display: none;
+            //         & img{
+            //             animation: CardAnimate 1s top ease-in;
+            //         }
+            //     }
 
-                    }
-                }
+            //     .title {
+            //         font-size: 24px;
+            //         font-weight: 600;
+            //         position: absolute;
+            //         // transform: translateY(-800%);
+            //         animation: CardAnimate 1s top ease-in-out;
+            //         background: linear-gradient(92deg, #A265FF -5.58%, #F88696 29.61%, #FBBA6E 64.81%, #FFE5B5 100%);
+            //         background-clip: text;
+            //         -webkit-background-clip: text;
+            //         -webkit-text-fill-color: transparent;
+            //     }
 
-                .title {
-                    font-size: 24px;
-                    font-weight: 600;
-                    transform: translateY(-800%);
-                    background: linear-gradient(92deg, #A265FF -5.58%, #F88696 29.61%, #FBBA6E 64.81%, #FFE5B5 100%);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
+            //     .desc {
+            //         opacity: 999;
+            //         font-size: 16px;
+            //         display: block;
+            //     }
 
-                .desc {
-                    opacity: 8;
-                    font-size: 16px;
-                    display: block;
-                    transform: translateY(-110%);
-                }
-
-                .anim {
-                    // transform: translateY(0);
-                }
-            }
+            //     .anim {
+            //         // transform: translateY(0);
+            //     }
+            // }
         }
 
         .card .cardBackground img {
@@ -100,38 +101,48 @@
     }
 }
 
+@keyframes CardAnimate{
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 @media only screen and (max-width: 1920px) {
-    /* Responsive styles */
+  
 }
 
 @media only screen and (max-width: 1728px) {
-    /* Responsive styles */
+  
 }
 
 @media only screen and (max-width: 1440px) {
-    /* Responsive styles */
+  
 }
 
 @media only screen and (max-width: 1366px) {
-    /* Responsive styles */
+  
 }
 
 @media only screen and (max-width: 1024px) {
-    /* Responsive styles */
+  
 }
 
 @media only screen and (max-width: 768px) {
-    /* Responsive styles */
+  
 }
 
 @media only screen and (max-width: 580px) {
-    /* Responsive styles */
+  
 }
 
 @media only screen and (max-width: 480px) {
-    /* Responsive styles */
+  
 }
 
 @media only screen and (max-width: 360px) {
-    /* Responsive styles */
+  
 }

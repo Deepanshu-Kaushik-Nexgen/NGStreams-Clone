@@ -67,3 +67,45 @@
 
     }
 }
+
+@media only screen and (max-width: 1024px){
+    .footerContainer {
+        padding: 4em 3.5em 2.5em 3.5em;
+    
+        .footerItem-1 {
+            font-weight: 400;
+
+            & p{
+                font-size: 10px !important;
+            }
+    
+            .icons {
+    
+                & img {
+                    height: 12px;
+                }
+    
+            }
+    
+    
+            .copyRight{
+                font-size: 0.6em;
+            }
+        }
+    
+        .footerItem-2, .footerItem-3, .footerItem-4, .footerItem-5{
+            & ul {
+                font-size: 10px;
+                font-weight: 400;
+            }
+        }
+    
+        .footerItem-6{
+            & p{
+                font-size: 10px;
+                font-weight: 400;
+            }
+    
+        }
+    }
+}
