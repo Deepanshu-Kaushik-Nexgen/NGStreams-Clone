@@ -4,6 +4,7 @@ import './App.css';
 import Home from './Views/Home/index'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Products from './Views/Products';
+import MobMenu from './components/mobileNavFooter'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/products' element={<Products />} />
         </Routes>
         <Footer />
+        <MobMenu />
       </BrowserRouter>
     </div>
   );

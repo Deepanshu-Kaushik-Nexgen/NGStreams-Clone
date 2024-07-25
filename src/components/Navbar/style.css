@@ -4,11 +4,11 @@
     color: white;
     background-color: var(--primary-Background);
     align-items: center;
-    padding: 23px 80px 15px 80px;
+    padding: 23px 80px 15px 50px;
     gap: 10px;
     justify-content: space-between;
     position: fixed;
-    width: 92%;
+    width: 100vw;
     z-index: 9999;
 
 }
@@ -266,6 +266,7 @@
 
     .BurgerMenu {
         display: block;
+        height: 2em;
     }
 
 

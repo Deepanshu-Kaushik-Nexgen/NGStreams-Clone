@@ -183,6 +183,9 @@ const Index = () => {
                                 <img src={Instagram} alt="" />
                                 <img src={Youtube} alt="" />
                                 <img src={Linkedin} alt="" />
+                                {/* <br/>
+                                Media & Broadcast
+                                Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement. */}
                             </div>
                         </div>
                     </div>

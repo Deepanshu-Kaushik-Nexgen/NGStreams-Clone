@@ -1,0 +1,29 @@
+.footerDiv{
+width: 100vw;
+background-color: rgb(46, 13, 13);
+bottom: 0;
+position: sticky;
+
+    .items{
+    display: flex;
+    flex-direction: row;
+    padding: 1em 2em;
+    margin: 0 auto;
+
+        .item{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 12%;
+            color: white;
+
+            & img{
+                height: 30px;
+            }
+        }
+    }
+}
+
+.none{
+    display: none;
+}

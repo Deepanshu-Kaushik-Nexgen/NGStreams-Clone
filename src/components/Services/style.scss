@@ -1,0 +1,28 @@
+.services{
+    // height: 80vh;
+    .servicesText{
+
+    }
+
+    .servicesBtns{
+        margin-top: 90px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        // color: antiquewhite;
+
+        .radioBtn{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            & label {
+                color: white;
+            }
+
+            & input {
+                height: 20px;
+            }
+        }
+    }
+}

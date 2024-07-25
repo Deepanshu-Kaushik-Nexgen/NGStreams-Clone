@@ -27,7 +27,6 @@
             .WordColor {
                 // color: green;
                 background: linear-gradient(135deg, #A265FF 10%, #F88696 50%, #FBBA6E 90%, #FFE5B5 100%);
-                ;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -69,7 +68,22 @@
 }
 
 
-@media only screen and (max-width: 1920px) {}
+@media only screen and (max-width: 1920px) {
+    .clientMain-Container{
+
+        .client-Container{
+            align-items: center;
+            justify-content: center;
+
+            .client-Card{
+                display: flex;
+                width: 13em;
+                align-items: center;
+                // margin: 5px auto;
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 1728px) {}
 
