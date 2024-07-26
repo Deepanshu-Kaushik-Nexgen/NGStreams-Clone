@@ -8,6 +8,13 @@ import './style.scss'
 
 
 const index = () => {
+    const Data = [
+        {image: Image1, Heading: "Media & Broadcast", Desc: "Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement."},
+        {image: Image2, Heading: "Media & Broadcast", Desc: "Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement."},
+        {image: Image3, Heading: "Media & Broadcast", Desc: "Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement."},
+        {image: Image4, Heading: "Media & Broadcast", Desc: "Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement."},
+        {image: Image5, Heading: "Media & Broadcast", Desc: "Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement."}
+    ]
     return (
         <>
             <div className="offeringsContainer">
@@ -18,7 +25,7 @@ const index = () => {
                     <h4>Power up your online business on the rock-solid foundation created by NGStreams.</h4>
                 </div>
                 <div className="cardsRows">
-                    <div className="card">
+                    {/* <div className="card">
                         <div className="cardBackground">
                             <img src={Image1} alt="" />
                         </div>
@@ -62,7 +69,13 @@ const index = () => {
                             <div className="title">Media & Broadcast</div>
                             <div className="desc">Our platform bolsters Media and Broadcast by guaranteeing seamless content delivery, maintaining exceptional quality, and providing real-time insights for ongoing performance enhancements and audience engagement.</div>
                         </div>
-                    </div>
+                    </div> */}
+
+                        {Data.map((item, index)=>{
+                            return <div className="card" key={index}>
+                                <img src={item.image} alt="" />
+                            </div>
+                        })}
                 </div>
             </div>
         </>

@@ -113,8 +113,8 @@
                 flex-wrap: wrap;
     
                 .imageDiv img {
-                    height: auto;
-                    width: 100%;
+                    height: 40em;
+                    width: 40em;
                 }
     
                 .contentDiv{
@@ -130,10 +130,75 @@
 
 @media only screen and (max-width: 580px) {
 
+    .whyChooseContainer {
+    
+        .background2 {
+            .contentMainDiv {
+    
+                width: 85%;
+                .imageDiv img {
+                    height: 28em;
+                    width: 32em;
+                }
+    
+                .contentDiv{
+                    width: 100%;
+    
+                    .contentCards{
+                        display: flex;
+                        justify-content: start;
+                        overflow-x: scroll;
+                        width: 100%;
+                        gap: 20px;
+                        margin-top: 2em;
+
+
+                        &::-webkit-scrollbar {
+                            display: none; /* Hide scrollbar */
+                        }
+                    }
+    
+                        .itemCard{
+                            padding: 10px 10px;
+                            background-color: white;
+                            min-width: 16em;
+                            border-radius: 5px;
+                            // margin-top: 10px;
+                            border-bottom: 1px solid rgb(168, 159, 159);
+                            // max-width: 18em;
+                       
+    
+                            & h3{
+                                font-size: 16px !important;
+                                font-weight: 700 !important;
+                                min-height: 2.5em;
+                            }
+    
+                            & p{
+                                font-size: 12px;
+                            }
+
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
-
+    .whyChooseContainer {
+    
+        .background2 {
+            .contentMainDiv {
+                .imageDiv img {
+                    height: 28em;
+                    width: 27em;
+                }
+    
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 360px) {

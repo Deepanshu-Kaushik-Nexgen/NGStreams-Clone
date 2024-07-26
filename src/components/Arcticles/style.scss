@@ -14,7 +14,7 @@
             // padding: 0 20px 0 20px;
             margin: 0 auto;
             align-items: center;
-            justify-content: center;
+            justify-content: start;
             cursor: pointer;
             // flex-wrap: wrap;
 
@@ -187,6 +187,11 @@
     .ArticlesComponentContainer {
         .articleSection {
             .articleSecData {
+                .articleSecImg{
+                    & img{
+                        width: 100%;
+                    }
+                }
                 .articleSecText {
 
                     & h2 {
@@ -206,6 +211,12 @@
     .ArticlesComponentContainer {
         .articleSection {
             .articleSecData {
+
+                .articleSecImg{
+                    & img{
+                        width: 100%;
+                    }
+                }
                 .articleSecText {
 
                     & h2 {
@@ -229,7 +240,7 @@
 
                 & .articleSecImg img {
                     margin-left: 13%;
-                    width: 100%;
+                    width: 50em;
                 }
 
                 .articleSecText {
@@ -264,15 +275,38 @@
 
                 & .articleSecImg img {
                     margin-left: 0;
-                    width: 95%;
+                    width: 43em;
                 }
             }
         }
     }
 }
 
-@media only screen and (max-width: 580px) {}
+@media only screen and (max-width: 580px) {
+    .ArticlesComponentContainer {
+        .articleSection {
+            .articleSecData {
 
-@media only screen and (max-width: 480px) {}
+                & .articleSecImg img {
+                    width:33em;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .ArticlesComponentContainer {
+        .articleSection {
+            .articleSecData {
+
+                & .articleSecImg img {
+                    width:26em;
+                }
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 360px) {}

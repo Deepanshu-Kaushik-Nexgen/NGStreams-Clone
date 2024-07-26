@@ -7,7 +7,7 @@ export default function index() {
             index: 1,
             title: (
                 <>
-                    Increased viewing<br/> sessions upto {<span className='WordColor'><br/>72%<br/></span>} and managing over {<span className='WordColor'>72 million+</span>} streaming sessions annually
+                    Increased viewing<br/> sessions upto {<span className='WordColor'><br/>72%<br/></span>} and managing over {<span className='WordColor'>72 million+<br/></span>} streaming sessions annually
                 </>
             )
         },

@@ -6,10 +6,6 @@ const index = () => {
     <>
     <div className="services">
         <div className="servicesText">
-
-
-
-
         </div>
         <div className="servicesBtns">
             <div className="radioBtn">

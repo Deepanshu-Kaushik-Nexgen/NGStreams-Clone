@@ -13,12 +13,12 @@ import SETTOPBOX from '../../Assets/ClientSec/traffic.jpg'
 export default function Index() {
   const [activeButton, setActiveButton] = useState(1)
 
-  useEffect(() => {
-    let intervalId = setInterval(() => {
-      setActiveButton(prevButton => (prevButton < 8 ? prevButton + 1 : 1));
-    }, 1000);
-    return () => clearInterval(intervalId);
-  },[])
+  // useEffect(() => {
+  //   let intervalId = setInterval(() => {
+  //     setActiveButton(prevButton => (prevButton < 8 ? prevButton + 1 : 1));
+  //   }, 1000);
+  //   return () => clearInterval(intervalId);
+  // },[])
 
   function buttonToggleFunction(id) {
     setActiveButton(id)

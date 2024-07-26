@@ -39,20 +39,32 @@ const Index = () => {
 
 
     const [width, setWidth] = useState(window.innerWidth);
-    console.log(window.innerWidth, "Before")
-    console.log(width,"checker")
+    // console.log(window.innerWidth, "Before")
+    // console.log(width,"checker")
     useEffect(() => {
       const handleResize = () => {
         setWidth(window.innerWidth);
       };
+
+
+    const switchMob = () => {
+        if (width <= 600) {
+            setIsMob(!isMob)
+        } else {
+            setIsMob(false)
+        }
+    }
+    switchMob()
   
       window.addEventListener('resize', handleResize);
   
       return () => {
         window.removeEventListener('resize', handleResize);
       };
-    }, []);
+
+    }, [width]);
     console.log(width, "After")
+
 
     return (
         <>

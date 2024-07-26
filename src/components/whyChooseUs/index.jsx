@@ -15,8 +15,8 @@ const WhyChooseUs = () => {
           <div className="contentDiv">
             <div className="headings">
              <h3> Why Media Houses love NGStreams</h3>
-             <p>People matter more than technical specs do.We put people first.</p>
-             <p className='colorGradient'>We put people first.</p>
+             <p>Company matter more than technical specs do.</p>
+             <p className='colorGradient'>We put companies first.</p>
             </div>
             <div className="contentCards">
                 <div className="itemCard">

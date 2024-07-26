@@ -31,77 +31,86 @@
         margin: 5em auto;
         position: relative;
 
-        .card {
-            width: 100%;
-            transition: 0.5s;
-            position: relative;
+        // .card {
+        //     width: 100%;
+        //     transition: 0.5s;
+        //     position: relative;
 
-            .anim {
-                // transition: 0.5s;
-                // transform: translateY(-100%);
+        //     .anim {
+        //         // transition: 0.5s;
+        //         // transform: translateY(-100%);
+        //     }
+
+        //     .title {
+        //         position: absolute;
+        //         color: rgb(255, 255, 255);
+        //         margin-left: 10px;
+        //     }
+
+        //     .desc {
+        //         position: absolute;
+        //         color: #fff;
+        //         display: none;
+        //         max-width: 90%;
+        //         text-align: left;
+        //         margin-left: 20px;
+        //         margin: 0 auto;
+        //     }
+
+        //     // &:hover {
+        //     //     .cardBackground {
+        //     //         position: relative;
+        //     //         // background-color: #FBBA6E !important;
+        //     //         overlay: green;
+        //     //         z-index: 99999;
+
+        //     //         & img{
+        //     //             animation: CardAnimate 1s top ease-in;
+        //     //         }
+        //     //     }
+
+        //     //     .title {
+        //     //         font-size: 24px;
+        //     //         font-weight: 600;
+        //     //         position: absolute;
+        //     //         // transform: translateY(-800%);
+        //     //         animation: CardAnimate 1s top ease-in-out;
+        //     //         background: linear-gradient(92deg, #A265FF -5.58%, #F88696 29.61%, #FBBA6E 64.81%, #FFE5B5 100%);
+        //     //         background-clip: text;
+        //     //         -webkit-background-clip: text;
+        //     //         -webkit-text-fill-color: transparent;
+        //     //     }
+
+        //     //     .desc {
+        //     //         opacity: 999;
+        //     //         font-size: 16px;
+        //     //         display: block;
+        //     //     }
+
+        //     //     .anim {
+        //     //         // transform: translateY(0);
+        //     //     }
+        //     // }
+        // }
+
+        // .card .cardBackground img {
+        //     height: 24em;
+        //     width: 15.3em;
+        //     object-fit: cover;
+        // }
+
+        .card{
+            
+            &img {
+                height: 4em;
+                width: 5em;
             }
-
-            .title {
-                position: absolute;
-                color: rgb(255, 255, 255);
-                margin-left: 10px;
-            }
-
-            .desc {
-                position: absolute;
-                color: #fff;
-                display: none;
-                max-width: 90%;
-                text-align: left;
-                margin-left: 20px;
-                margin: 0 auto;
-            }
-
-            // &:hover {
-            //     .cardBackground {
-            //         position: relative;
-            //         // background-color: #FBBA6E !important;
-            //         overlay: green;
-            //         z-index: 99999;
-
-            //         & img{
-            //             animation: CardAnimate 1s top ease-in;
-            //         }
-            //     }
-
-            //     .title {
-            //         font-size: 24px;
-            //         font-weight: 600;
-            //         position: absolute;
-            //         // transform: translateY(-800%);
-            //         animation: CardAnimate 1s top ease-in-out;
-            //         background: linear-gradient(92deg, #A265FF -5.58%, #F88696 29.61%, #FBBA6E 64.81%, #FFE5B5 100%);
-            //         background-clip: text;
-            //         -webkit-background-clip: text;
-            //         -webkit-text-fill-color: transparent;
-            //     }
-
-            //     .desc {
-            //         opacity: 999;
-            //         font-size: 16px;
-            //         display: block;
-            //     }
-
-            //     .anim {
-            //         // transform: translateY(0);
-            //     }
-            // }
         }
 
-        .card .cardBackground img {
-            height: 24em;
-            width: 15.3em;
-            object-fit: cover;
-        }
     }
 }
 
-@keyframes CardAnimate{
+@keyframes CardAnimate {
     from {
         transform: translateY(100%);
     }
@@ -111,38 +120,20 @@
     }
 }
 
-@media only screen and (max-width: 1920px) {
-  
-}
+@media only screen and (max-width: 1920px) {}
 
-@media only screen and (max-width: 1728px) {
-  
-}
+@media only screen and (max-width: 1728px) {}
 
-@media only screen and (max-width: 1440px) {
-  
-}
+@media only screen and (max-width: 1440px) {}
 
-@media only screen and (max-width: 1366px) {
-  
-}
+@media only screen and (max-width: 1366px) {}
 
-@media only screen and (max-width: 1024px) {
-  
-}
+@media only screen and (max-width: 1024px) {}
 
-@media only screen and (max-width: 768px) {
-  
-}
+@media only screen and (max-width: 768px) {}
 
-@media only screen and (max-width: 580px) {
-  
-}
+@media only screen and (max-width: 580px) {}
 
-@media only screen and (max-width: 480px) {
-  
-}
+@media only screen and (max-width: 480px) {}
 
-@media only screen and (max-width: 360px) {
-  
-}
+@media only screen and (max-width: 360px) {}

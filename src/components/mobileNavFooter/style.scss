@@ -3,6 +3,7 @@ width: 100vw;
 background-color: black;
 bottom: 0;
 position: sticky;
+z-index: 99999;
 
     .items{
     display: flex;

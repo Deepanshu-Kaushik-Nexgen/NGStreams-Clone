@@ -80,8 +80,8 @@ const Index = () => {
 
     return (
         <>
-            {console.log(handleArrow)}
-            {console.log(mobMenu)}
+            {/* {console.log(handleArrow)}
+            {console.log(mobMenu)} */}
 
             <nav>
                 <div  ref={btnRef} className="navContainer">
