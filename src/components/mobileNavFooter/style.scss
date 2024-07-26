@@ -1,6 +1,6 @@
 .footerDiv{
 width: 100vw;
-background-color: rgb(46, 13, 13);
+background-color: black;
 bottom: 0;
 position: sticky;
 
@@ -26,4 +26,33 @@ position: sticky;
 
 .none{
     display: none;
+}
+
+@media only screen and (max-width: 480px){
+    .footerDiv{
+            .items{
+                .item{
+                    margin-right: 9%;
+                }
+            }
+        }
+        
+}
+
+@media only screen and (max-width: 360px){
+    .footerDiv{
+        
+        
+            .items{
+                padding: 1em 0.5em;
+        
+                .item{
+                    margin-right: 4%;
+                    font-size: 14px;
+                    // text-align: center;
+                    margin: 0 auto;
+                }
+            }
+        }
+        
 }

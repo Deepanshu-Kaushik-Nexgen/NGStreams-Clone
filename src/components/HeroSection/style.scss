@@ -333,3 +333,13 @@
         }
     }
 }
+
+@media only screen and (max-width: 360px) {
+    .homeContainer{
+        .hero-images{
+            .img2{
+                width: 15em;
+            }
+        }
+    }
+}

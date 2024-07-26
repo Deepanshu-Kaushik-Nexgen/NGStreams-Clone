@@ -93,3 +93,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 580px) {
+.faqMainDiv{
+    // max-width: 85%;
+    .accordianDiv{
+        max-width: 85%;
+        .accordian{
+            max-width: 100%;
+        }
+    }
+}
+}

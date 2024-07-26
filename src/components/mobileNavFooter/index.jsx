@@ -9,21 +9,51 @@ import FreeDemo from '../../Assets/icons/Mobile-Footer/FreeDemo.svg'
 
 const Index = () => {
     const [isMob, setIsMob] = useState(true)
-    let Width = window.innerWidth
+    // const [width, setWidth] = useState(window.innerWidth)
 
-   useEffect(() => {
-    const switchMob = () => {
-        if (Width <= 600) {
-            setIsMob(true)
-            console.log("Yess")
-        } else {
-            setIsMob(false)
-        }
-    }
-    switchMob()
-console.log(Width)
-   }, [Width])
+    // useEffect(() => {
+
+    //     const switchMob = () => {
+    //         if (width <= 600) {
+    //             setIsMob(true)
+    //             console.log("Yess")
+    //         // console.log(width)
+
+    //             setIsMob(false)
+    //         }
+    //     }
+    //     switchMob()
+
+    //     const handleResize = () => {
+    //         setWidth(window.innerWidth);
+    //     };
+
+    //     window.addEventListener('resize', handleResize);
+
+    //     // return () => {
+    //     //     window.removeEventListener('resize', handleResize);
+    //     // }
+    //      },[width])
    
+    //      console.log(width)
+
+
+    const [width, setWidth] = useState(window.innerWidth);
+    console.log(window.innerWidth, "Before")
+    console.log(width,"checker")
+    useEffect(() => {
+      const handleResize = () => {
+        setWidth(window.innerWidth);
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+    console.log(width, "After")
+
     return (
         <>
             <div className={isMob ? "footerDiv" : "none"}>

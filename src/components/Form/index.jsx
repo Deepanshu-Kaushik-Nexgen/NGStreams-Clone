@@ -37,6 +37,8 @@ const Form = () => {
 
   return (
     <>
+    <div className="formMainContainer">
+     
       <div className="formContainer">
         <div className="formheadings">
           <h2>Interested and want to receive more information?</h2>
@@ -76,6 +78,8 @@ const Form = () => {
           <ToastContainer />
         </form>
       </div>
+       
+    </div>
     </>
   )
 }
