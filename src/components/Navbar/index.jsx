@@ -12,6 +12,7 @@ import Youtube from '../../Assets/icons/Youtube.svg'
 import { Link } from 'react-router-dom'
 
 const Index = () => {
+
     const [handleArrow, setHandleArrow] = useState(false)
     const [showProducts, setShowProducts] = useState(false)
     const [showCompany, setShowCompany] = useState(false)

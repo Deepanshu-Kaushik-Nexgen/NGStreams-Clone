@@ -9,35 +9,6 @@ import FreeDemo from '../../Assets/icons/Mobile-Footer/FreeDemo.svg'
 
 const Index = () => {
     const [isMob, setIsMob] = useState(true)
-    // const [width, setWidth] = useState(window.innerWidth)
-
-    // useEffect(() => {
-
-    //     const switchMob = () => {
-    //         if (width <= 600) {
-    //             setIsMob(true)
-    //             console.log("Yess")
-    //         // console.log(width)
-
-    //             setIsMob(false)
-    //         }
-    //     }
-    //     switchMob()
-
-    //     const handleResize = () => {
-    //         setWidth(window.innerWidth);
-    //     };
-
-    //     window.addEventListener('resize', handleResize);
-
-    //     // return () => {
-    //     //     window.removeEventListener('resize', handleResize);
-    //     // }
-    //      },[width])
-   
-    //      console.log(width)
-
-
     const [width, setWidth] = useState(window.innerWidth);
     // console.log(window.innerWidth, "Before")
     // console.log(width,"checker")

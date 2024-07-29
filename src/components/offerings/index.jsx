@@ -74,6 +74,10 @@ const index = () => {
                         {Data.map((item, index)=>{
                             return <div className="card" key={index}>
                                 <img src={item.image} alt="" />
+                                <div className="card-content">
+                                    <h3>{item.Heading}</h3>
+                                    <p>{item.Desc}</p>
+                                </div>
                             </div>
                         })}
                 </div>
