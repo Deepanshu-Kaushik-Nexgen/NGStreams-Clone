@@ -107,11 +107,11 @@
             position: relative;
             overflow: hidden;
             height: 25em;
-            min-width: 15em;
+            min-width: 16em;
 
             & img {
                 height: 25em;
-                width: 15em;
+                width: 16em;
                 object-fit: cover;
                 border-radius: 2px;
             }
@@ -140,16 +140,19 @@
                 text-align: justify;
 
                 & h3 {
-                    margin-top: 70%;
+                    margin-top: 78%;
                     text-align: center;
                     background: var(--text-gradient-light);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     padding: 0 5%;
+                    text-align: left;
                 }
 
                 & p {
                     padding: 0 5%;
+                    font-size: 14px;
+                    text-align: left;
                 }
             }
         }

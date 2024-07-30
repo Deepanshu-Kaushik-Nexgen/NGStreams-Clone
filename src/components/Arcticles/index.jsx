@@ -12,20 +12,25 @@ import SETTOPBOX from '../../Assets/ClientSec/traffic.jpg'
 
 export default function Index() {
   const [activeButton, setActiveButton] = useState(1)
+  const [mouseOver, setMouseOver] = useState(false)
+  let intervalId
 
   useEffect(() => {
-    let intervalId = setInterval(() => {
-      setActiveButton(prevButton => (prevButton < 8 ? prevButton + 1 : 1));
-    }, 10000);
-    return () => clearInterval(intervalId);
-  },[])
+    if (mouseOver === false) {
+       intervalId = setInterval(() => {
+        setActiveButton(prevButton => (prevButton < 8 ? prevButton + 1 : 1));
+      }, 1000);
+      return () => clearInterval(intervalId);
+    }
+  }, [mouseOver])
 
+console.log(mouseOver);
   function buttonToggleFunction(id) {
     setActiveButton(id)
   }
   return (
     <>
-      <div className="ArticlesComponentContainer">
+      <div className="ArticlesComponentContainer" onMouseEnter={() => setMouseOver(true)} onMouseLeave={()=> setMouseOver(false)}>
         <h2>Accelerate to a digital future with our products</h2>
         <p>Customer centricity, innovation and ethical corporate governance are at our core.</p>
 
@@ -39,7 +44,7 @@ export default function Index() {
             <div className={`btn ${activeButton === 6 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(6)}>VR OTT Watch</div>
             <div className={`btn ${activeButton === 7 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(7)}>Personalisation and Recommendation</div>
             <div className={`btn ${activeButton === 8 ? "activeBtn" : ""}`} onClick={() => buttonToggleFunction(8)}>SetTop Box</div>
-           
+
           </div>
           {activeButton === 1 ? <div className="articleSecData">
             <div className="articleSecText" id='AdInsertion'>
@@ -80,7 +85,7 @@ export default function Index() {
           {activeButton === 4 ? <div className="articleSecData">
             <div className="articleSecText" id='AdInsertion'>
               <h2>Enhance Engagement, Enrich Experience: Elevating OTT Content with Metadata <span className="ColorHeading">Mastery</span></h2>
-              
+
               <p>Empower your OTT platform with enriched metadata, unlocking deeper engagement and personalized user experiences. Our solution ensures seamless content discovery and relevance, driving viewer satisfaction and retention.</p>
               <div className='button'>Discover More</div>
             </div>
@@ -128,7 +133,7 @@ export default function Index() {
           {activeButton === 8 ? <div className="articleSecData">
             <div className="articleSecText" id='AdInsertion'>
               <h2>Versatile Entertainment Hub: Home Viewing Experience with smart <span className="ColorHeading">Set-Top boxes</span></h2>
-              
+
               <p>An all-in-one device offering diverse entertainment options and seamless connectivity for an enhanced viewing experience at the comfort of your home.</p>
               <div className='button'>Discover More</div>
             </div>
@@ -138,7 +143,7 @@ export default function Index() {
           </div> : ""}
         </div>
       </div>
-      <div className="space" style={{height: "50px", backgroundColor: "#EDEDF7"}}></div>
+      <div className="space" style={{ height: "50px", backgroundColor: "#EDEDF7" }}></div>
     </>
   )
 }

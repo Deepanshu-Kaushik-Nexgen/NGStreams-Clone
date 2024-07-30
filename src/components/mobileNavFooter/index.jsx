@@ -5,13 +5,12 @@ import Products from '../../Assets/icons/Mobile-Footer/Products.svg'
 import Company from '../../Assets/icons/Mobile-Footer/Company.svg'
 import Services from '../../Assets/icons/Mobile-Footer/Services.svg'
 import FreeDemo from '../../Assets/icons/Mobile-Footer/FreeDemo.svg'
+import { Link } from 'react-router-dom'
 
 
 const Index = () => {
     const [isMob, setIsMob] = useState(true)
     const [width, setWidth] = useState(window.innerWidth);
-    // console.log(window.innerWidth, "Before")
-    // console.log(width,"checker")
     useEffect(() => {
       const handleResize = () => {
         setWidth(window.innerWidth);
@@ -43,11 +42,11 @@ const Index = () => {
                 <div className="items">
                     <div className="item">
                         <img src={Home} alt="" />
-                        Home
+                       <Link to="/">Home</Link>
                     </div>
                     <div className="item">
                         <img src={Products} alt="" />
-                        Products
+                        <Link to="/products">Products</Link>
                     </div>
                     <div className="item">
                         <img src={Company} alt="" />
